@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ico/Gato-Italiano.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -10,11 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Pizzaria</title>
+    <title>Pizzaria | Artesanal </title>
 </head>
 <body>
     <header class="site-header">
-        <a class="brand" href="#inicio" aria-label="Forno vila">
+        <a class="brand" href="#inicio" aria-label="Forno da vila">
             <span class="brand-mark">F</span>
             <span>Forno da Vila</span>
         </a>
@@ -25,7 +26,7 @@
           <a href="#contato">Contato</a>
         </nav>
 
-        <a class=" heder-action" heref="#pedido">
+        <a class=" header-action" heref="#pedido">
             <i data-lucide="shopping-bag">Pedir</i>
         </a>
     </header>
@@ -33,14 +34,14 @@
     <main>
         <section class="hero" id="inicio">
             <div class="hero-content">
-                <p class="eyebrow">PIzzaria artesanal em Sao Paulo</p>
+                <p class="eyebrow">Pizzaria artesanal em Sao Paulo</p>
                 <h1>Forno da Vila</h1>
                 <p class="hero-text">
                      Massas de fermentacao lenta, molho de tomates frescos e sabores
                      preparados para chegar quentinhos na sua mesa.
                 </p>
                 <div class="hero-actions">
-                    <a class="button primario" href="#cardapio">
+                    <a class="button primary" href="#cardapio">
                         <i data-lucide="utensils"></i>
                         Ver Cardapio
                     </a>
@@ -52,7 +53,190 @@
             </div>
         </section>
 
+        <section class="menu-section" id="cardapio">
+            <div class="section-heading">
+                <p class="eyebrow">Cardapio</p>
+                <h2>Escolha sua favorita</h2>
+            </div>
 
+            <div class="category-tabs" aria-label="Categorias do Caradapio">
+                <button class="tab active" data-category="todas">Todas</button>
+                <button class="tab" data-category="classicas">Clássicas</button>
+                <button class="tab" data-category="especiais">Especiais</button>
+                <button class="tab" data-category="doces">Doces</button>
+            </div>
+
+            <div class="menu-grid">
+                <article class="pizza-card" data-category="classicas">
+                    <img
+                       src="imgs/margherita.jpg"
+                       alt="Pizza margherita com manjericao"
+                       />
+                    <div class="pizza-info">
+                        <h3>Margherita</h3>
+                        <p>Molho da casa, mussarela, tomate e manjericao fresco.</p>
+                        <div class="pizza-footer">
+                            <strong>R$ 42,00</strong>
+                            <button class="add-button" data-item="Margherita" data-price="42.00">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                 <article class="pizza-card" data-category="classicas">
+                    <img
+                       src="imgs/pizza calabresa.jpg"
+                       alt="Pizza de calabresa"
+                       />
+                    <div class="pizza-info">
+                        <h3>Calabresa</h3>
+                        <p>Calabresa fatiada, cebola roxa, oregano e mussarela.</p>
+                        <div class="pizza-footer">
+                            <strong>R$ 45,00</strong>
+                            <button class="add-button" data-item="Calabresa" data-price="45.00">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pizza-card" data-category="especiais">
+                    <img
+                       src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=900&q=80"
+                       alt="Pizza especial com borda assada"
+                       />
+                    <div class="pizza-info">
+                        <h3>Vila Suprema</h3>
+                        <p>Parma, rucula, parmesao, tomates confitados e azeite.</p>
+                        <div class="pizza-footer">
+                            <strong>R$ 62,00</strong>
+                            <button class="add-button" data-item="Vila Suprema" data-price="62.00">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pizza-card" data-category="especiais">
+                    <img
+                       src="imgs/4queijos.jpg"
+                       alt="Pizza quatro queijos"
+                       />
+                    <div class="pizza-info">
+                        <h3>Quatro Queijos</h3>
+                          <p>Mussarela, gorgonzola, parmesao, provolone e mel.</p>
+                        <div class="pizza-footer">
+                            <strong>R$ 58,00</strong>
+                            <button class="add-button" data-item="Quatro Queijos" data-price="58.00">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pizza-card" data-category="doces">
+                    <img
+                       src="imgs/chocolate.jpg"
+                       alt="Pizza doce com chocolate"
+                       />
+                    <div class="pizza-info">
+                        <h3>Chocolate</h3>
+                          <p>Creme de chocolate, morangos e raspas de chocolate.</p>
+                        <div class="pizza-footer">
+                            <strong>R$ 39,00</strong>
+                            <button class="add-button" data-item="Chocolate" data-price="39.00">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="pizza-card" data-category="doces">
+                    <img
+                            src="imgs/banan com canela.jpg"
+                            alt="Pizza doce assada"
+                       />
+                    <div class="pizza-info">
+                        <h3>Banana com Canela</h3>
+                          <p>Banana caramelizada, canela, doce de leite e queijo suave.</p>
+                        <div class="pizza-footer">
+                            <strong>R$ 37,00</strong>
+                            <button class="add-button" data-item="Banana com Canela" data-price="37.00">
+                                <i data-lucide="plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class=" order-band" id="pedidos">
+            <div>
+                <p class="eyebrow">Pedidos rapido</p>
+                <h2>Sacola</h2>
+                <p class="muted">Adicione pizzas pelo cardapio e veja o total aqui.</p>
+            </div>
+
+            <div class="oreder-box">
+                <ul id="oreder-list">
+                    <li class="empty">Sua sacola esta vazia.</li>
+                </ul>
+                <div class="order-total">
+                    <span>Total:</span>
+                    <strong id="order-total">R$ 0,00</strong>
+                </div>
+                <button class="button primary full" id="finish-order">
+                    <i data-lucide="send"></i>
+                    FInalizar Pedido
+                </button>
+            </div>
+        </section>
+
+        <section class="about-section" id="sobre">
+            <div class="about-image"></div>
+            <div class="about-content">
+                <p class="eyebrow">Desde 2018</p>
+                <h2>Forno aceso, massa leve e ingredientes bem escolhidos</h2>
+                <p>
+                  A Forno da Vila nasceu como uma pizzaria de bairro com alma
+                  artesanal. Nosso foco e simples: uma massa saborosa, bons
+                  ingredientes e atendimento proximo.
+                </p>
+                <div class="highlights">
+                    <span><i data-lucide="flame"></i>Forno a lenha</span>
+                    <span><i data-lucide="leaf"></i>Ingredientes frescos</span>
+                    <span><i data-lucide="bike"></i>Delivery Local</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contato">
+            <div>
+                <p class="eyebrow">Contato</p>
+                <h2>Venha jantar ou peça em casa</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i data-lucide="map-pin"></i>
+                    <span>Rua das Oliveíras, 128 - São Paulo</span>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="clock"></i>
+                    <span> Terça a domingo, 18h as 23h</span>
+                </div>
+                <div class="contact-item">
+                    <i data-lucide="phone"></i>
+                    <span>(11) 4002-2026</span>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <span>Forno da Vila</span>
+        <span>Site criado por Matheus.dev</span>
+    </footer>
 </body>
 </html>
