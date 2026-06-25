@@ -179,19 +179,37 @@
                 <p class="muted">Adicione pizzas pelo cardapio e veja o total aqui.</p>
             </div>
 
-            <div class="order-box">
-                <ul id="order-list">
-                    <li class="empty">Sua sacola esta vazia.</li>
-                </ul>
-                <div class="order-total">
-                    <span>Total:</span>
-                    <strong id="order-total">R$ 0,00</strong>
-                </div>
-                <button class="button primary full" id="finish-order">
-                    <i data-lucide="send"></i>
-                    Finalizar Pedido
-                </button>
+           <div class="order-box">
+              <ul id="order-list">
+              <li class="empty">Sua sacola está vazia.</li>
+              </ul>
+
+           <div class="form-fields">
+             <input
+              type="text"
+              id="customer-name"
+              placeholder="Seu nome"
+             >
+             <input
+             type="text"
+             id="customer-address"
+             placeholder="Seu endereço"
+             >
+             <input type="tel" id="customer-phone" placeholder="Telefone">
+             <textarea id="customer-note" placeholder="Observações"></textarea>
             </div>
+          </div>
+
+          <div class="order-total">
+          <span>Total:</span>
+          <strong id="order-total">R$ 0,00</strong>
+          </div>
+
+          <button class="button primary full" id="finish-order">
+           <i data-lucide="send"></i>
+           Finalizar Pedido
+         </button>
+        </div>
         </section>
 
         <section class="about-section" id="sobre">
